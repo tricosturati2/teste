@@ -1,5 +1,4 @@
-FROM httpd:latest
+FROM httpd:alpine3.17
+COPY teste.html /usr/local/apache2/htdocs/teste.html
 
-copy index.html /var/www/index.html
-
-workdir /var/www/
+WORKDIR /the/workdir/path /var/www/
